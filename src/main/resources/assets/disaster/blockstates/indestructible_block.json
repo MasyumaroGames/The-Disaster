@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "disaster:block/indestructible_block"
+    }
+  }
+}

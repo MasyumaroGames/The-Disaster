@@ -1,0 +1,17 @@
+{
+  "nature_guardian_boss": {
+    "sounds": [
+      "disaster:nature_guardian_boss"
+    ]
+  },
+  "nature_guardian_death": {
+    "sounds": [
+      "disaster:nature_guardian_death"
+    ]
+  },
+  "nature_guardian_hurt": {
+    "sounds": [
+      "disaster:nature_guardian_hurt"
+    ]
+  }
+}
