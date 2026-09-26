@@ -125,6 +125,10 @@ repositories {
         name = "GeckoLib"
         url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
     }
+
+    maven {
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
@@ -146,6 +150,12 @@ dependencies {
     // The group id is ignored when searching -- in this case, it is "blank"
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
     implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.20.1:4.7.3")
+
+    // JEI
+    implementation fg.deobf("curse.maven:jei-238222:8964933")
+
+    // Neat
+    implementation fg.deobf("curse.maven:neat-238372:5838485")
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html

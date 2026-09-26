@@ -14,7 +14,7 @@ public class Disaster {
     public Disaster() {
         GeckoLib.initialize();
 
-        IEventBus bus = FMLJavaModLoadingContext .get().getModEventBus();
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModEntities.ENTITIES.register(bus);
         ModSounds.SOUND_EVENTS.register(bus);

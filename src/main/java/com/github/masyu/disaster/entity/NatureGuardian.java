@@ -1,5 +1,7 @@
 package com.github.masyu.disaster.entity;
 
+import com.github.masyu.disaster.entity.ai.NatureGuadian.GroundSlamGoal;
+import com.github.masyu.disaster.entity.ai.NatureGuadian.RootEntangleGoal;
 import com.github.masyu.disaster.registry.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerBossEvent;
@@ -36,7 +38,7 @@ public class NatureGuardian extends Monster implements GeoEntity {
         return Monster.createMonsterAttributes()
                 .add(Attributes.MAX_HEALTH, 400.0D)   // 体力
                 .add(Attributes.MOVEMENT_SPEED, 0.25D) // 移動速度
-                .add(Attributes.ATTACK_DAMAGE, 30.0D)  // 攻撃力
+                .add(Attributes.ATTACK_DAMAGE, 20.5D)  // 攻撃力
                 .add(Attributes.FOLLOW_RANGE, 50.0D);  // 索敵距離
     }
 
@@ -87,12 +89,18 @@ public class NatureGuardian extends Monster implements GeoEntity {
         this.goalSelector.addGoal(0, new FloatGoal(this));
 
         this.goalSelector.addGoal(1,
-                new MeleeAttackGoal(this, 1.0D, false));
+                new RootEntangleGoal(this));
+
+        this.goalSelector.addGoal(1,
+                new GroundSlamGoal(this));
 
         this.goalSelector.addGoal(2,
-                new WaterAvoidingRandomStrollGoal(this, 0.8D));
+                new MeleeAttackGoal(this, 1.0D, false));
 
         this.goalSelector.addGoal(3,
+                new WaterAvoidingRandomStrollGoal(this, 0.8D));
+
+        this.goalSelector.addGoal(4,
                 new LookAtPlayerGoal(this, Player.class, 8.0F));
 
         this.goalSelector.addGoal(4,
@@ -189,4 +197,40 @@ public class NatureGuardian extends Monster implements GeoEntity {
     protected SoundEvent getHurtSound(DamageSource damageSource) {
         return ModSounds.NATURE_GUARDIAN_HURT.get();
     }
+
+    // --- クールダウン管理用フィールド ---
+    private int groundSlamCooldown = 0;
+    private int rootEntangleCooldown = 0;
+
+    // ... 既存のコンストラクタやフィールドはそのまま ...
+
+    @Override
+    protected void customServerAiStep() {
+        super.customServerAiStep();
+        if (groundSlamCooldown > 0) {
+            groundSlamCooldown--;
+        }
+        if (rootEntangleCooldown > 0) {
+            rootEntangleCooldown--;
+        }
+    }
+
+    // --- GroundSlam用 ---
+    public boolean isGroundSlamReady() {
+        return groundSlamCooldown <= 0;
+    }
+
+    public void setGroundSlamCooldown(int ticks) {
+        this.groundSlamCooldown = ticks;
+    }
+
+    // --- RootEntangle用 ---
+    public boolean isRootEntangleReady() {
+        return rootEntangleCooldown <= 0;
+    }
+
+    public void setRootEntangleCooldown(int ticks) {
+        this.rootEntangleCooldown = ticks;
+    }
+
 }
