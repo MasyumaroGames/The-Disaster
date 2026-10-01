@@ -1,4 +1,4 @@
-package com.github.masyu.disaster.entity;
+package com.github.masyu.disaster.entity.boss;
 
 import com.github.masyu.disaster.entity.ai.NatureGuadian.GroundSlamGoal;
 import com.github.masyu.disaster.entity.ai.NatureGuadian.RootEntangleGoal;
@@ -27,6 +27,8 @@ import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
+import javax.annotation.Nullable;
+
 public class NatureGuardian extends Monster implements GeoEntity {
     public NatureGuardian(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
@@ -39,7 +41,9 @@ public class NatureGuardian extends Monster implements GeoEntity {
                 .add(Attributes.MAX_HEALTH, 400.0D)   // 体力
                 .add(Attributes.MOVEMENT_SPEED, 0.25D) // 移動速度
                 .add(Attributes.ATTACK_DAMAGE, 20.5D)  // 攻撃力
-                .add(Attributes.FOLLOW_RANGE, 50.0D);  // 索敵距離
+                .add(Attributes.FOLLOW_RANGE, 50.0D) // 索敵距離
+                .add(Attributes.ARMOR, 10.0D)                // 防御力
+                .add(Attributes.ARMOR_TOUGHNESS, 5.0D);     // 防具強度
     }
 
     private static final RawAnimation IDLE =
@@ -119,25 +123,19 @@ public class NatureGuardian extends Monster implements GeoEntity {
     @Override
     public void startSeenByPlayer(ServerPlayer player) {
         super.startSeenByPlayer(player);
-
-        bossEvent.addPlayer(player);
-
-        System.out.println("PLAYER START SEEING BOSS");
+        this.bossEvent.addPlayer(player);
     }
 
     @Override
     public void stopSeenByPlayer(ServerPlayer player) {
         super.stopSeenByPlayer(player);
-
-        bossEvent.removePlayer(player);
+        this.bossEvent.removePlayer(player);
     }
 
     @Override
     public boolean doHurtTarget(Entity target) {
 
         boolean result = super.doHurtTarget(target);
-
-        System.out.println("NATURE GUARDIAN ATTACK");
 
         if (!level().isClientSide()) {
             triggerAnim("AttackController", "attack");

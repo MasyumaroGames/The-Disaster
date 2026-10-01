@@ -13,5 +13,10 @@
     "sounds": [
       "disaster:nature_guardian_hurt"
     ]
+  },
+  "dryad_hurt": {
+    "sounds": [
+      "disaster:dryad_hurt"
+    ]
   }
 }

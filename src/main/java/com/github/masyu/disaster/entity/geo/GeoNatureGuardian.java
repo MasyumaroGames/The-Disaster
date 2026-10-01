@@ -1,6 +1,6 @@
 package com.github.masyu.disaster.entity.geo;
 
-import com.github.masyu.disaster.entity.NatureGuardian;
+import com.github.masyu.disaster.entity.boss.NatureGuardian;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

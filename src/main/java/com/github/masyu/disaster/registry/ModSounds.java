@@ -28,4 +28,9 @@ public class ModSounds {
                     () -> SoundEvent.createVariableRangeEvent(
                             new ResourceLocation("disaster", "nature_guardian_hurt")
                     ));
+    public static final RegistryObject<SoundEvent> DRYAD_HURT =
+            SOUND_EVENTS.register("dryad_hurt",
+                    () -> SoundEvent.createVariableRangeEvent(
+                            new ResourceLocation("disaster", "dryad_hurt")
+                    ));
 }

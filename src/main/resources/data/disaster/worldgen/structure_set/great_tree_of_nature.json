@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "disaster:great_tree_of_nature",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 60,
+    "separation": 40,
+    "salt": 847291
+  }
+}

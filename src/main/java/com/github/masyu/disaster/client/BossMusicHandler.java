@@ -1,6 +1,6 @@
 package com.github.masyu.disaster.client;
 
-import com.github.masyu.disaster.entity.NatureGuardian;
+import com.github.masyu.disaster.entity.boss.NatureGuardian;
 import com.github.masyu.disaster.music.NatureGuardianBossMusic;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.Entity;

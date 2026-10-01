@@ -2,10 +2,21 @@
   "itemGroup.main_tab": "The Disaster",
 
   "item.disaster.nature_guardian_spawn_egg": "Nature Guardian Spawn Egg",
+  "item.disaster.dryad_spawn_egg": "Dryad Spawn Egg",
 
   "block.disaster.indestructible_block": "Mysterious Stone Bricks",
+  "block.disaster.teleporter": "Teleporter",
+  "block.disaster.altar_of_nature": "Altar of Nature",
 
   "entity.disaster.nature_guardian": "Nature Guardian",
+  "entity.disaster.dryad": "Dryad",
 
-  "boss.disaster.nature_guardian": "Nature Guardian"
+  "boss.disaster.nature_guardian": "Nature Guardian",
+
+  "advancements.disaster.root.title": "The Disaster",
+  "advancements.disaster.root.description": "Welcome to The Disaster.",
+  "advancements.disaster.find_nature.title": "That's a huge tree...",
+  "advancements.disaster.find_nature.description": "Find a great tree in nature.",
+  "advancements.disaster.kill_nature.title": "Symbol of the Overworld",
+  "advancements.disaster.kill_nature.description": "Summon and defeat the Nature Guardian."
 }

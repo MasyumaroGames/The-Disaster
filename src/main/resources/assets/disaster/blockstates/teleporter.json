@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "endpoint=tree": { "model": "disaster:block/teleporter" },
+    "endpoint=boss": { "model": "disaster:block/teleporter" }
+  }
+}

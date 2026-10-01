@@ -21,6 +21,7 @@ public class Disaster {
         ModItems.ITEMS.register(bus);
         ModBlocks.Blocks.BLOCKS.register(bus);
         ModBlocks.BlockItems.BLOCKS_ITEMS.register(bus);
+        ModBlockEntities.BLOCK_ENTITIES.register(bus);
         ModTabs.MOD_TABS.register(bus);
 
     }

@@ -1,0 +1,15 @@
+{
+  "name": "disaster:great_tree_of_nature",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "disaster:great_tree_of_nature",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 package com.github.masyu.disaster.entity.renderer;
 
-import com.github.masyu.disaster.entity.NatureGuardian;
+import com.github.masyu.disaster.entity.boss.NatureGuardian;
 import com.github.masyu.disaster.entity.geo.GeoNatureGuardian;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;

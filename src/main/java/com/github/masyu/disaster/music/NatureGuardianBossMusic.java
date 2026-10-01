@@ -1,6 +1,6 @@
 package com.github.masyu.disaster.music;
 
-import com.github.masyu.disaster.entity.NatureGuardian;
+import com.github.masyu.disaster.entity.boss.NatureGuardian;
 import com.github.masyu.disaster.registry.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.sounds.AbstractTickableSoundInstance;

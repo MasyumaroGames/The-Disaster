@@ -1,0 +1,29 @@
+{
+  "parent": "disaster:find_nature",
+  "criteria": {
+    "kill_nature": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "disaster:nature_guardian"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.disaster.kill_nature.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "disaster:altar_of_nature"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.disaster.kill_nature.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

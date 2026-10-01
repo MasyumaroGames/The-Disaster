@@ -17,6 +17,18 @@ public class ModItems {
      * Spawn Egg
      */
 
+    // Dryad
+    public static final RegistryObject<Item> DRYAD_SPAWN_EGG =
+            ITEMS.register(
+                    "dryad_spawn_egg",
+                    () -> new ForgeSpawnEggItem(
+                            ModEntities.DRYAD,
+                            0xB7F5C,
+                            0xb3957d,
+                            new Item.Properties()
+                    )
+            );
+
     // Nature Guardian
     public static final RegistryObject<Item> NATURE_GUARDIAN_SPAWN_EGG =
             ITEMS.register(

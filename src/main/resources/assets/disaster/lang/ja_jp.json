@@ -1,11 +1,22 @@
 {
   "itemGroup.main_tab": "The Disaster",
 
-  "item.disaster.nature_guardian_spawn_egg": "ナチュラルガーディアンのスポーンエッグ",
+  "item.disaster.nature_guardian_spawn_egg": "自然の守護者のスポーンエッグ",
+  "item.disaster.dryad_spawn_egg": "ドライアドのスポーンエッグ",
 
   "block.disaster.indestructible_block": "不思議な石レンガ",
+  "block.disaster.teleporter": "転送装置",
+  "block.disaster.altar_of_nature": "自然の祭壇",
 
-  "entity.disaster.nature_guardian": "ナチュラルガーディアン",
+  "entity.disaster.nature_guardian": "自然の守護者",
+  "entity.disaster.dryad": "ドライアド",
 
-  "boss.disaster.nature_guardian": "ナチュラルガーディアン"
+  "boss.disaster.nature_guardian": "自然の守護者",
+
+  "advancements.disaster.root.title": "The Disaster",
+  "advancements.disaster.root.description": "The Disasterへようこそ！",
+  "advancements.disaster.find_nature.title": "でっかい木だなぁ...",
+  "advancements.disaster.find_nature.description": "自然の大樹を見つける",
+  "advancements.disaster.kill_nature.title": "オーバーワールドの象徴みたいだ",
+  "advancements.disaster.kill_nature.description": "自然の守護者を召喚し、倒す。"
 }

@@ -1,0 +1,31 @@
+{
+  "parent": "disaster:root",
+  "criteria": {
+    "nature": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "disaster:great_tree_of_nature"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.disaster.find_nature.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "disaster:altar_of_nature"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.disaster.find_nature.title"
+    }
+  },
+  "sends_telemetry_event": true
+}

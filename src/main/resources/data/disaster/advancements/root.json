@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "root": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.disaster.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "disaster:altar_of_nature"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.disaster.root.title"
+    },
+    "background": "disaster:textures/block/indestructible_block.png"
+  },
+  "sends_telemetry_event": true
+}

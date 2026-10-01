@@ -8,6 +8,9 @@ public class MainTab {
 
     public static final Item[] items = {
             ModBlocks.BlockItems.INDESTRUCTIBLE_BLOCK.get(),
-            ModItems.NATURE_GUARDIAN_SPAWN_EGG.get()
+            ModBlocks.BlockItems.TELEPORTER.get(),
+            ModBlocks.BlockItems.ALTAR_OF_NATURE.get(),
+            ModItems.NATURE_GUARDIAN_SPAWN_EGG.get(),
+            ModItems.DRYAD_SPAWN_EGG.get()
     };
 }
