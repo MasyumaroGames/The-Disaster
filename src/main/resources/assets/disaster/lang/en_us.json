@@ -3,6 +3,11 @@
 
   "item.disaster.nature_guardian_spawn_egg": "Nature Guardian Spawn Egg",
   "item.disaster.dryad_spawn_egg": "Dryad Spawn Egg",
+  "item.disaster.great_tree_eye": "Nature Eye",
+  "item.disaster.wood_waste": "Wood Waste",
+
+  "item.disaster.magnificent_nature": "§2Music §3Disc",
+  "item.disaster.magnificent_nature.desc": "MG - Magnificent Nature",
 
   "block.disaster.indestructible_block": "Mysterious Stone Bricks",
   "block.disaster.teleporter": "Teleporter",
@@ -18,5 +23,7 @@
   "advancements.disaster.find_nature.title": "That's a huge tree...",
   "advancements.disaster.find_nature.description": "Find a great tree in nature.",
   "advancements.disaster.kill_nature.title": "Symbol of the Overworld",
-  "advancements.disaster.kill_nature.description": "Summon and defeat the Nature Guardian."
+  "advancements.disaster.kill_nature.description": "Summon and defeat the Nature Guardian.",
+
+  "message.disaster.great_tree_eye.not_found": "There are no dungeons in the surrounding area."
 }

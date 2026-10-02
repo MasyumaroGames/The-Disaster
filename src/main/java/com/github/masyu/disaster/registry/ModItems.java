@@ -2,6 +2,9 @@ package com.github.masyu.disaster.registry;
 
 import com.github.masyu.disaster.Disaster;
 
+import com.github.masyu.disaster.item.WoodWaste;
+import com.github.masyu.disaster.item.eye.GreatTreeEyeItem;
+import com.github.masyu.disaster.item.records.MagnificentNature;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,6 +15,21 @@ public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Disaster.MODID);
 
+
+    /**
+     * Item
+     */
+
+    // Wood Waste
+    public static final RegistryObject<Item> WOOD_WASTE = ITEMS.register("wood_waste", WoodWaste::new);
+
+
+    /**
+     * Records
+     */
+
+    // Nature Guadian
+    public static final RegistryObject<Item> MAGNIFICENT_NATURE = ITEMS.register("magnificent_nature", MagnificentNature::new);
 
     /**
      * Spawn Egg
@@ -40,4 +58,12 @@ public class ModItems {
                             new Item.Properties()
                     )
             );
+
+    /**
+     * Eye
+     */
+
+    // Nature Guadian
+    public static final RegistryObject<Item> GREAT_TREE_EYE = ITEMS.register("great_tree_eye",
+            () -> new GreatTreeEyeItem(new Item.Properties().stacksTo(1)));
 }

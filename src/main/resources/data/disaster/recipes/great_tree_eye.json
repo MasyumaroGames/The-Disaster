@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#SG",
+    "OED",
+    "dJR"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:sand"
+    },
+    "S": {
+      "item": "minecraft:spruce_sapling"
+    },
+    "G": {
+      "item": "minecraft:grass_block"
+    },
+    "O": {
+      "item": "minecraft:oak_sapling"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "D": {
+      "item": "minecraft:dark_oak_sapling"
+    },
+    "d": {
+      "item": "minecraft:dirt"
+    },
+    "J": {
+      "item": "minecraft:jungle_sapling"
+    },
+    "R": {
+      "item": "minecraft:red_sand"
+    }
+  },
+  "result": {
+    "item": "disaster:great_tree_eye"
+  }
+}

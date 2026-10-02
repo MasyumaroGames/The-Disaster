@@ -16,7 +16,7 @@ public class ModTabs {
 
     public static final RegistryObject<CreativeModeTab> MAIN_TAB = MOD_TABS.register("main_tab",
             ()->{return CreativeModeTab.builder()
-                    .icon(()->new ItemStack(ModItems.NATURE_GUARDIAN_SPAWN_EGG.get()))
+                    .icon(()->new ItemStack(ModBlocks.Blocks.ALTAR_OF_NATURE.get()))
                     .title(Component.translatable("itemGroup.main_tab"))
                     .displayItems((param, output) -> {
                         for (Item item : MainTab.items) {

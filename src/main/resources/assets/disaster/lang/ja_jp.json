@@ -3,6 +3,11 @@
 
   "item.disaster.nature_guardian_spawn_egg": "自然の守護者のスポーンエッグ",
   "item.disaster.dryad_spawn_egg": "ドライアドのスポーンエッグ",
+  "item.disaster.great_tree_eye": "ネイチャーアイ",
+  "item.disaster.wood_waste": "木くず",
+
+  "item.disaster.magnificent_nature": "§2レコ§3ード",
+  "item.disaster.magnificent_nature.desc": "MG - Magnificent Nature",
 
   "block.disaster.indestructible_block": "不思議な石レンガ",
   "block.disaster.teleporter": "転送装置",
@@ -18,5 +23,7 @@
   "advancements.disaster.find_nature.title": "でっかい木だなぁ...",
   "advancements.disaster.find_nature.description": "自然の大樹を見つける",
   "advancements.disaster.kill_nature.title": "オーバーワールドの象徴みたいだ",
-  "advancements.disaster.kill_nature.description": "自然の守護者を召喚し、倒す。"
+  "advancements.disaster.kill_nature.description": "自然の守護者を召喚し、倒す。",
+
+  "message.disaster.great_tree_eye.not_found": "近くにダンジョンが存在しません。"
 }

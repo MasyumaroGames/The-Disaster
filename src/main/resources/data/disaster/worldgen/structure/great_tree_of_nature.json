@@ -9,5 +9,8 @@
   "terrain_adaptation": "none",
   "biomes": "#minecraft:is_forest",
   "step": "surface_structures",
-  "spawn_overrides": {}
+  "spawn_overrides": {},
+  "values": [
+    "disaster:great_tree_of_nature"
+  ]
 }

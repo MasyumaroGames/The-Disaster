@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "disaster:item/great_tree_eye"
+  }
+}

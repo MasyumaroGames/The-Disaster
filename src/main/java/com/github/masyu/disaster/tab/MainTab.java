@@ -7,6 +7,9 @@ import net.minecraft.world.item.Item;
 public class MainTab {
 
     public static final Item[] items = {
+            ModItems.WOOD_WASTE.get(),
+            ModItems.GREAT_TREE_EYE.get(),
+            ModItems.MAGNIFICENT_NATURE.get(),
             ModBlocks.BlockItems.INDESTRUCTIBLE_BLOCK.get(),
             ModBlocks.BlockItems.TELEPORTER.get(),
             ModBlocks.BlockItems.ALTAR_OF_NATURE.get(),

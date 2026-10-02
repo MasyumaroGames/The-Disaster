@@ -45,7 +45,7 @@ public class ModBlocks {
 
         public static final RegistryObject<TeleportBlock> TELEPORTER = BLOCKS.register("teleporter",
                 () -> new TeleportBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE)
-                        .strength(3.0F).noOcclusion()));
+                        .strength(-1,3600000).explosionResistance(1000000000000000000000000000F).noOcclusion()));
 
     }
 

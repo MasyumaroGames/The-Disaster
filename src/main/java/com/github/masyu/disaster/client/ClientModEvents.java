@@ -1,5 +1,6 @@
 package com.github.masyu.disaster.client;
 
+import com.github.masyu.disaster.entity.renderer.DungeonGuideOrbRenderer;
 import com.github.masyu.disaster.registry.ModBlocks;
 import com.github.masyu.disaster.registry.ModEntities;
 import com.github.masyu.disaster.entity.renderer.NatureGuardianRenderer;
@@ -17,15 +18,9 @@ public class ClientModEvents {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        EntityRenderers.register(
-                ModEntities.NATURE_GUARDIAN.get(),
-                NatureGuardianRenderer::new
-        );
-
-        EntityRenderers.register(
-                ModEntities.DRYAD.get(),
-                DryadRenderer::new // ← これを追加
-        );
+        EntityRenderers.register(ModEntities.NATURE_GUARDIAN.get(), NatureGuardianRenderer::new);
+        EntityRenderers.register(ModEntities.DRYAD.get(), DryadRenderer::new);
+        EntityRenderers.register(ModEntities.DUNGEON_GUIDE_ORB.get(), DungeonGuideOrbRenderer::new);
 
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.Blocks.ENTANGLING_ROOT.get(), RenderType.cutout());

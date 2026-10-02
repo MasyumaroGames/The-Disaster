@@ -20,7 +20,7 @@
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "disaster:altar_of_nature"
+      "item": "disaster:wood_waste"
     },
     "show_toast": true,
     "title": {
